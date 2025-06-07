@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Consultório Veterinário</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <h1>Consultório Veterinário</h1>
+
+  <div id="imagem">
+    <img src="./img/Foto_Cachorro.jpg" alt="Cachorro"/>
+  </div>
+
+  <form id="formulario">
+    <label for="nomePaciente">Paciente:</label>
+    <input type="text" id="nomePaciente" name="nomePaciente" required />
+
+    <label for="imagemPaciente">Imagem do Paciente:</label>
+    <input type="file" id="imagemPaciente" name="imagemPaciente" accept="image/*" required />
+
+    <div class="botoes">
+      <button type="button" id="botaoAdicionar">Adicionar</button>
+      <button type="button" id="botaoUrgencia">Urgência</button>
+      <button type="button" id="botaoAtender">Atender</button>
+    </div>
+  </form>
+
+  <div id="pacienteEmAtendimento" class="atendimento"></div>
+  <div id="listaEspera" class="lista-espera"></div>
+
+  <script src="./js/script2.js"></script>
+
+</body>
+</html>
